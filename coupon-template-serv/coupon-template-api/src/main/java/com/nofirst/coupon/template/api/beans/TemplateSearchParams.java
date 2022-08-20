@@ -5,25 +5,29 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+//import javax.validation.constraints.NotNull;
+
 /**
- * 封装优惠券信息
+ * 创建优惠券模板
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CouponInfo {
+public class TemplateSearchParams {
 
     private Long id;
 
-    private Long templateId;
+    private String name;
 
-    private Long userId;
+    private String type;
 
     private Long shopId;
 
-    private Integer status;
+    private Boolean available;
 
-    private CouponTemplateInfo template;
+    private int page;
+
+    private int pageSize;
 
 }

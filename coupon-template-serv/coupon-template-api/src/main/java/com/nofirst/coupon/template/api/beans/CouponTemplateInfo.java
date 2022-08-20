@@ -1,6 +1,6 @@
 package com.nofirst.coupon.template.api.beans;
 
-import com.nofirst.coupon.template.api.beans.beans.rules.TemplateRule;
+import com.nofirst.coupon.template.api.beans.rules.TemplateRule;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

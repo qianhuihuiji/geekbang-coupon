@@ -1,4 +1,4 @@
-package com.nofirst.coupon.template.api.beans.beans.rules;
+package com.nofirst.coupon.template.api.beans.rules;
 
 public class TemplateRule {
 
