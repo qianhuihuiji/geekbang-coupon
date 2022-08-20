@@ -1,5 +1,5 @@
 <archetype>
-  <id>coupon-template-serv</id>
+  <id>geekbang-coupon</id>
   <sources>
     <source>src/main/java/App.java</source>
   </sources>

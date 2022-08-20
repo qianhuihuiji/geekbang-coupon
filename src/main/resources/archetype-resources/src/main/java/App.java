@@ -1,4 +1,4 @@
-package $com.nofirst;
+package $org.example;
 
 /**
  * Hello world!
