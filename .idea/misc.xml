@@ -7,6 +7,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/coupon-template-serv/coupon-template-dao/pom.xml" />
         <option value="$PROJECT_DIR$/coupon-template-serv/coupon-template-impl/pom.xml" />
+        <option value="$PROJECT_DIR$/coupon-calculation-serv/pom.xml" />
+        <option value="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-api/pom.xml" />
+        <option value="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/pom.xml" />
       </list>
     </option>
   </component>

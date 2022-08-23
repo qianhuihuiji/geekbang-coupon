@@ -1,5 +1,14 @@
 package com.nofirst.coupon.template.api.beans.rules;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class TemplateRule {
 
     /** 可以享受的折扣 */
