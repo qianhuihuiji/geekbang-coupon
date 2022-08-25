@@ -1,4 +1,4 @@
-package com.nofirst.coupon.calculation.impl;
+package com.nofirst.coupon.calculation;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

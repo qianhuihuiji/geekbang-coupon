@@ -1,8 +1,8 @@
-package com.nofirst.coupon.calculation.impl.template.impl;
+package com.nofirst.coupon.calculation.template.impl;
 
 import com.nofirst.coupon.calculation.api.beans.ShoppingCart;
-import com.nofirst.coupon.calculation.impl.template.AbstractRuleTemplate;
-import com.nofirst.coupon.calculation.impl.template.RuleTemplate;
+import com.nofirst.coupon.calculation.template.AbstractRuleTemplate;
+import com.nofirst.coupon.calculation.template.RuleTemplate;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 

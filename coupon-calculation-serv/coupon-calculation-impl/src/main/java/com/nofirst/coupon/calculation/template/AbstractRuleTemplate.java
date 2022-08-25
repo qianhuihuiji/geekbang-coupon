@@ -1,4 +1,4 @@
-package com.nofirst.coupon.calculation.impl.template;
+package com.nofirst.coupon.calculation.template;
 
 import com.nofirst.coupon.calculation.api.beans.Product;
 import com.nofirst.coupon.calculation.api.beans.ShoppingCart;
@@ -66,6 +66,7 @@ public abstract class AbstractRuleTemplate implements RuleTemplate {
 
     /**
      * 计算总价
+     *
      * @param products
      * @return
      */

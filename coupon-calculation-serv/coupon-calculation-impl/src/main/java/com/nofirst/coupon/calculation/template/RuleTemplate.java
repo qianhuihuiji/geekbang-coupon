@@ -1,4 +1,4 @@
-package com.nofirst.coupon.calculation.impl.template;
+package com.nofirst.coupon.calculation.template;
 
 import com.nofirst.coupon.calculation.api.beans.ShoppingCart;
 

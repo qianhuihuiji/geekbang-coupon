@@ -1,11 +1,10 @@
-package com.nofirst.coupon.calculation.impl.template;
+package com.nofirst.coupon.calculation.template;
 
 import com.nofirst.coupon.calculation.api.beans.ShoppingCart;
-import com.nofirst.coupon.calculation.impl.template.impl.DummyTemplate;
+import com.nofirst.coupon.calculation.template.impl.DummyTemplate;
 import com.nofirst.coupon.template.api.beans.CouponTemplateInfo;
 import com.nofirst.coupon.template.api.enums.CouponType;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
@@ -18,7 +17,7 @@ import java.util.Map;
 public class CouponTemplateFactory {
 
     @Resource
-    private Map <String, RuleTemplate> ruleTemplateMap;
+    private Map<String, RuleTemplate> ruleTemplateMap;
 
     @Resource
     private DummyTemplate dummyTemplate;
@@ -35,8 +34,7 @@ public class CouponTemplateFactory {
         CouponTemplateInfo template = order.getCouponInfos().get(0).getTemplate();
         CouponType category = CouponType.convert(template.getType());
 
-        // todo
-        return ruleTemplateMap.getOrDefault(category.getCode(), dummyTemplate);
+        return ruleTemplateMap.getOrDefault(category.getTemplateName(), dummyTemplate);
     }
 
 }

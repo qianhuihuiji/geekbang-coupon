@@ -1,4 +1,4 @@
-package com.nofirst.coupon.calculation.impl;
+package com.nofirst.coupon.calculation;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
