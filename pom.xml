@@ -16,6 +16,8 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>coupon-template-serv</module>
+      <module>coupon-customer-serv/coupon-customer-api</module>
+    <module>coupon-customer-serv/coupon-customer-dao</module>
   </modules>
 
   <properties>
