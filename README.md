@@ -1,5 +1,11 @@
 # `docker` 安装 `nacos` 集群
 
+拉取镜像，默认拉取最新版本：
+
+```shell
+docker pull nacos/nacos-server
+```
+
 `nacos1`:
 
 ```shell
