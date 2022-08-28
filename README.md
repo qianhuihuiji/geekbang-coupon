@@ -21,3 +21,9 @@ docker run -d -e PREFER_HOST_MODE=hostname -e MODE=cluster -e NACOS_APPLICATION_
 注意点：
 
 - `192.168.88.78` 为本机ip，通过`ifconfig`获取，启动`nacos`后访问地址为`localhost:8848/nacos`
+
+```shell
+ifconfig | grep 192
+```
+
+- 有个不爽的点，每次切换网络之后，需要重新换启动命令
