@@ -1,4 +1,4 @@
-package com.nofirst.coupon.template.service;
+package com.nofirst.coupon.template.service.impl;
 
 import com.nofirst.coupon.template.api.beans.CouponTemplateInfo;
 import com.nofirst.coupon.template.api.beans.PagedCouponTemplateInfo;
@@ -7,7 +7,7 @@ import com.nofirst.coupon.template.api.enums.CouponType;
 import com.nofirst.coupon.template.converter.CouponTemplateConverter;
 import com.nofirst.coupon.template.dao.CouponTemplateDao;
 import com.nofirst.coupon.template.dao.entity.CouponTemplate;
-import com.nofirst.coupon.template.service.intf.CouponTemplateService;
+import com.nofirst.coupon.template.service.CouponTemplateService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;

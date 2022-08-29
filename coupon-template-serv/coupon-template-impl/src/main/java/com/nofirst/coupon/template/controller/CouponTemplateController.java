@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.nofirst.coupon.template.api.beans.CouponTemplateInfo;
 import com.nofirst.coupon.template.api.beans.PagedCouponTemplateInfo;
 import com.nofirst.coupon.template.api.beans.TemplateSearchParams;
-import com.nofirst.coupon.template.service.intf.CouponTemplateService;
+import com.nofirst.coupon.template.service.CouponTemplateService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
