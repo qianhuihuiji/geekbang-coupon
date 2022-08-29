@@ -47,7 +47,7 @@ public class Coupon {
 
     // 被Transient标记的属性是不会被持久化的
     @Transient
-    private CouponTemplateInfo couponTemplateInfo;
+    private CouponTemplateInfo templateInfo;
 
     // 获取时间自动生成
     @CreatedDate

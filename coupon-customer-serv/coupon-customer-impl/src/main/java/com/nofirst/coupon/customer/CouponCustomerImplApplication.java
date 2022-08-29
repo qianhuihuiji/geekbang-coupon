@@ -1,4 +1,4 @@
-package com.nofirst.coupon.customer.impl;
+package com.nofirst.coupon.customer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

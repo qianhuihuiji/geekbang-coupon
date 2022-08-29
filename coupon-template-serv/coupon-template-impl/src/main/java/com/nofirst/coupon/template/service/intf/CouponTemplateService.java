@@ -1,4 +1,4 @@
-package com.nofirst.coupon.template.impl.service.intf;
+package com.nofirst.coupon.template.service.intf;
 
 
 import com.nofirst.coupon.template.api.beans.CouponTemplateInfo;

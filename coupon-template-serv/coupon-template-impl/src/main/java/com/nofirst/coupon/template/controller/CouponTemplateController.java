@@ -1,10 +1,10 @@
-package com.nofirst.coupon.template.impl.controller;
+package com.nofirst.coupon.template.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.nofirst.coupon.template.api.beans.CouponTemplateInfo;
 import com.nofirst.coupon.template.api.beans.PagedCouponTemplateInfo;
 import com.nofirst.coupon.template.api.beans.TemplateSearchParams;
-import com.nofirst.coupon.template.impl.service.intf.CouponTemplateService;
+import com.nofirst.coupon.template.service.intf.CouponTemplateService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -36,7 +36,7 @@ public class CouponTemplateController {
 
     // 读取优惠券
     @GetMapping("/getTemplate")
-    public CouponTemplateInfo getTemplate(@RequestParam("id") Long id){
+    public CouponTemplateInfo getTemplate(@RequestParam("id") Long id) {
         log.info("Load template, id={}", id);
         return couponTemplateService.loadTemplateInfo(id);
     }
@@ -57,7 +57,7 @@ public class CouponTemplateController {
 
     // 优惠券无效化
     @DeleteMapping("/deleteTemplate")
-    public void deleteTemplate(@RequestParam("id") Long id){
+    public void deleteTemplate(@RequestParam("id") Long id) {
         log.info("Load template, id={}", id);
         couponTemplateService.deleteTemplate(id);
     }

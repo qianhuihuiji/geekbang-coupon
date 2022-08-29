@@ -1,4 +1,4 @@
-package com.nofirst.coupon.template.impl.converter;
+package com.nofirst.coupon.template.converter;
 
 
 import com.nofirst.coupon.template.api.beans.CouponTemplateInfo;
