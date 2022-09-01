@@ -67,6 +67,13 @@ spring:
         watch:
           enabled: true
         watch-delay: 30000
+    sentinel:
+      transport:
+        # sentinel api端口，默认8719
+        port: 8719
+        # dashboard地址
+        dashboard: localhost:8858
+        client-ip: 192.168.43.206
 
 logging:
   level:
