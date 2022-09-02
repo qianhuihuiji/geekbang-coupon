@@ -54,11 +54,12 @@ public class CouponTemplateController {
             blockHandler = "getTemplateInBatch_block")
     public Map<Long, CouponTemplateInfo> getTemplateInBatch(
             @RequestParam("ids") Collection<Long> ids) {
+        // 如果接口被熔断，那么下面这行log不会被打印出来
         log.info("getTemplateInBatch: {}", JSON.toJSONString(ids));
         // 可以测试异常比例、异常数熔断
-//        if (ids.size() == 2) {
-//            throw new RuntimeException("异常");
-//        }
+        if (ids.size() == 2) {
+            throw new RuntimeException("异常");
+        }
         // 可以测试慢调用熔断
 //            try {
 //                Thread.sleep(500 * ids.size());
@@ -69,14 +70,14 @@ public class CouponTemplateController {
 
     // 接口被降级时的方法
     public Map<Long, CouponTemplateInfo> getTemplateInBatch_fallback(Collection<Long> ids) {
-        log.info("接口被降级");
+        log.info("/getBatch 接口被降级");
         return Maps.newHashMap();
     }
 
     // 流控降级的方法
     public Map<Long, CouponTemplateInfo> getTemplateInBatch_block(
             Collection<Long> ids, BlockException e) {
-        log.info("接口被限流");
+        log.info("/getBatch 接口被限流");
         return Maps.newHashMap();
     }
 
