@@ -47,3 +47,24 @@ docker run -d -e PREFER_HOST_MODE=hostname -e MODE=cluster -e NACOS_APPLICATION_
  
 docker run -d -e PREFER_HOST_MODE=hostname -e MODE=cluster -e NACOS_APPLICATION_PORT=8948 -e NACOS_SERVERS="172.19.0.2:8848 172.19.0.3:8948" -e SPRING_DATASOURCE_PLATFORM=mysql -e MYSQL_SERVICE_HOST=192.168.88.78 -e MYSQL_SERVICE_PORT=33060 -e MYSQL_SERVICE_USER=root -e MYSQL_SERVICE_PASSWORD=root -e MYSQL_SERVICE_DB_NAME=nacos -e NACOS_SERVER_IP=172.19.0.3 -p 8948:8948 --net=mynetwork --ip 172.19.0.3 --name my-nacos2 nacos/nacos-server
 ```
+
+# docker 部署 sentinel 配置
+
+```shell
+spring:
+  application:
+    name: cloudalibaba-sentinel-service
+  cloud:
+    nacos:
+      discovery:
+        # Nacos服务注册中心地址
+        server-addr: localhost:8848
+    sentinel:
+      transport:
+        # sentinel dashboard 地址
+        dashboard: localhost:8858
+        # 默认为8719，如果被占用会自动+1，直到找到为止
+        port: 8719
+        # 本地机器ip
+        client-ip: 本机ip
+```
