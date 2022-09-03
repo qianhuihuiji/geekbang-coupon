@@ -65,6 +65,6 @@ spring:
         dashboard: localhost:8858
         # 默认为8719，如果被占用会自动+1，直到找到为止
         port: 8719
-        # 本地机器ip
+        # 本地机器ip,ex:192.168.4.21
         client-ip: 本机ip
 ```
