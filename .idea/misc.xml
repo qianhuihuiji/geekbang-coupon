@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/coupon-calculation-serv/coupon-calculation-impl/pom.xml" />
         <option value="$PROJECT_DIR$/coupon-customer-serv/pom.xml" />
         <option value="$PROJECT_DIR$/coupon-customer-serv/coupon-customer-impl/pom.xml" />
+        <option value="$PROJECT_DIR$/middleware/pom.xml" />
+        <option value="$PROJECT_DIR$/middleware/gateway/pom.xml" />
       </list>
     </option>
   </component>
